@@ -1,0 +1,267 @@
+\documentclass[a4paper,12pt]{moderncv}
+\usepackage{bibentry}
+\usepackage[scale=0.85, top=2.5cm, bottom=1.5cm]{geometry}
+\moderncvstyle{classic}
+\moderncvcolor{burgundy}
+\setlength{\hintscolumnwidth}{2.2cm}
+
+\firstname{St\'ephane}
+\familyname{d'Ascoli}
+\address{Born on 9\up{th} of March 1996,\\
+Bristol (United Kingdom)
+\\
+\\
+45, rue d'Ulm \\
+75005 Paris \\
+}{}{}
+\phone[mobile]{+33 6~87~52~39~29}
+\email{stephane.dascoli@gmail.com}
+\photo[100pt][5pt]{photo1}
+\social[github]{github.com/sdascoli}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\hyphenpenalty 10000
+
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+%   \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}% I changed this line (with comma) ...
+    \ifthenelse{\equal{#4}{}}{}{ {\slshape#4}}% ... into this one (without comma).
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{ #6}%
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+      
+\usepackage{xpatch}
+\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
+
+\begin{document}
+\nobibliography{all_papers}
+\bibliographystyle{unsrt}
+  
+\makecvtitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textsc{Education}}
+
+\vspace{0.3cm}
+
+\cventry{2018 -- 2019}{Pre-Ph.D. in Theoretical Physics / Artificial Intelligence, supervised by G. Biroli}{\newline Laboratoire de Physique Statistique, ENS Ulm}{Paris}{\newline Member of the Simons Collaboration on Cracking the Glass Problem}{Applying methods from theoretical physics and statistical inference to develop a mathematical description of deep learning algorithms}
+
+\vspace{0.3cm}
+
+\cventry{2016 -- 2018}{Master's degree in Theoretical Physics}{\newline ENS Ulm}{Paris}{}{Obtained with first class honours (average grade : 16.48/20)}
+
+\vspace{0.3cm}
+
+
+\cventry{2015 -- 2016}{Bachelor's degree in Fundamental Physics}{\newline ENS Ulm}{Paris}{}{Obtained with first class honours (average grade : 17.00/20)}
+
+\vspace{0.3cm}
+
+\cventry{2015}{Entered the \'Ecole Normale Supérieure (ENS)}{\newline ENS Ulm}{Paris}{}{Ranked 6\up{th} nationwide, accepted in all other top French schools including \'Ecole Polytechnique}
+
+\vspace{0.3cm}
+
+\cventry{2013 -- 2015}{``Classe Préparatoire aux Grandes \'Ecoles''}{\newline Lycée Thiers}{Marseille}{}{Intensive two-year undergraduate course in Mathematics, Physics and Chemistry, in preparation for the nationwide competitive entrance exams for the top French schools}
+
+
+\vspace{0.3cm}
+
+\cventry{2013}{Science Baccalaureate, specialized in maths}{\newline Lycée Sainte-Marie}{Aubagne}{}{Obtained with first class honours (average grade : 19.63/20)}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textsc{Experience}}
+
+\vspace{0.3cm}
+
+\cventry{Sep 2018 -- Sep 2019}
+{Pre-Ph.D. in Theoretical Physics / Artificial Intelligence, supervised by G. Biroli}
+{\newline Laboratoire de Physique de l'ENS}
+{Paris.}
+{\newline Member of the Simons Collaboration on Cracking the Glass Problem}
+{Applying methods from theoretical physics and statistical inference to develop a mathematical description of deep learning algorithms}
+
+\vspace{0.3cm}
+
+\cventry{Apr -- Aug 2019}
+{Machine learning research internship, supervised by M. Lelarge and A. Coucke}
+{\newline \textit{Inria and Snips}, Paris.}
+{}
+{}
+{Variational Auto-Encoders for Text Generation\\
+GitHub repository open-sourced at \textit{github.com/snipsco/automatic-data-generation}}
+
+\vspace{0.3cm}
+
+\cventry{Apr -- Jul 2018}
+{Research internship, supervised by G. Biroli}
+{}
+{\newline \textit{ENS Ulm}, Paris / \textit{CEA}, Saclay}
+{\newline Member of the Simons Collaboration on Cracking the Glass Problem}
+{Loss landscape of deep neural networks}
+
+\vspace{0.3cm}
+
+\cventry{Sep 2017 --}
+{``Classe Préparatoire aux Grandes \'Ecoles'' examiner}
+{\newline Lycées Henri-IV, Saint-Louis, and Michelet}
+{Paris}
+{}
+{Oral examinations in Physics given on a weekly basis to undergraduate students}
+
+\vspace{0.3cm}
+
+\cventry{Feb -- Jul 2017}
+{Research internship, supervised by S. \textsc{Noble} and M. \textsc{Campanelli}}
+{}
+{\newline \textit{NASA Goddard Space Flight Center}, Greenbelt, Maryland / \textit{Center for Computational Relativity and Gravitation}, Rochester, New York}
+{}
+{Electromagnetic counterparts to gravitational waves in supermassive binary black hole mergers}
+
+\vspace{0.3cm}
+
+\cventry{Jun -- Jul 2016}
+{Research internship, supervised by C. \textsc{Schimd}}
+{\newline Laboratoire d'Astrophysique de Marseille}
+{Marseille}
+{}
+{Cosmological simulations for the spectro-imager BATMAN}
+
+\vspace{0.5cm}
+
+% \cventry{Mar 2016}{Research internship, supervised by C. \textsc{Gissinger}}{\newline Laboratoire de Physique Statistique}{Paris}{}{Turbulence in swirling flows}
+
+% \vspace{0.3cm}
+
+% \cventry{Dec 2015}{Research internship, supervised by G. \textsc{Hetet}}{\newline Laboratoire Pierre Aigrain}{Paris}{}{Quantum entanglement in nonlinear crystals}
+
+% \vspace{0.3cm}
+
+
+% \cventry{Sep 2015 --}{Private teaching,}{Paris}{}{}{Private tuition given on a regular basis to undergraduate students in Mathematics and Physics}
+
+% \vspace{0.3cm}
+
+% \cventry{Sep -- Jul 2015}{Research project, supervised by J. \textsc{Kergomard}}{\newline Laboratoire de Mécanique et d'Acoustique}{Marseille}{}{Nonlinearities in reed instruments}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textsc{Publications}}
+
+\vspace{0.3cm}
+%Peer-reviewed:
+\vspace{0.3cm}
+\begin{itemize}
+    \item \bibentry{d_Ascoli_2018} \newline \\
+    \vspace{0.1cm}
+    NASA press release may be found here : \textit{https://www.nasa.gov/feature/goddard/2018/new-simulation-sheds-light-on-spiraling-supermassive-black-holes} \newline \\
+    \vspace{0.1cm}
+    News feature in many newspapers (\textit{Daily Mail, L'Obs, Science \& Vie...}) \newline
+%\end{itemize}
+%\vspace{0.3cm}
+%Pre-prints:
+%\vspace{0.3cm}
+%\begin{itemize}
+
+    \item \bibentry{2018arXiv180909349G} \newline
+    \vspace{0.1cm}
+    \textit{In publication in Physical Review E}
+    \vspace{0.3cm}
+    
+    \item \bibentry{2018arXiv181009665S} \newline
+    \vspace{0.1cm}
+    \textit{Presented at NeurIPS 2018 Workshop ``Integration of Deep Learning Theories''}
+    \vspace{0.3cm}
+    
+    \item \bibentry{2019arXiv190101608G} \newline
+    \vspace{0.1cm}
+    \textit{Submitted to PNAS}
+    \vspace{0.3cm}
+    
+    \item \bibentry{2019arXiv190606766D} \newline
+    \vspace{0.1cm}
+    \textit{Submitted to NeurIPS 2019}
+\end{itemize}
+
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textsc{Conferences and Workshops}}
+
+\vspace{0.3cm}
+
+\cventry{Feb-March 2019}{The Rough High-Dimensional Landscape Problem
+}{\newline Kavli Institute for Theoretical Physics}{University of California at Santa Barbara}{}{Deep Learning and Statistical Mechanics}
+
+\vspace{0.3cm}
+
+\cventry{Dec 2018}{Thirty-second Conference on Neural Information Processing Systems (NeurIPS)}{\newline Palais des Congrès}{Montréal}{}{Latest advances in machine learning and computational neurosciences\\ Presented a poster}
+
+\vspace{0.3cm}
+
+
+\cventry{Sep 2018}{Disordered Serendipity}{\newline University La Sapienza}{Rome}{}{Statistical Physics of Disordered Systems}
+
+\vspace{0.3cm}
+
+\cventry{Jul 2018}{Beg Rohu Summer School}{\newline Beg Rohu Summer School}{Saint-Pierre Quiberon}{}{Deep Learning and Statistical Mechanics\\ Presented a poster }
+
+\vspace{0.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textsc{Skills}}
+
+\vspace{0.3cm}
+
+\cvitemwithcomment{Languages}{French : fluent}{Father's first language}
+\cvitemwithcomment{}{English : fluent}{Mother's first language}
+\cvitemwithcomment{}{German : proficient}{Attended school near Stuttgart}
+
+\vspace{0.3cm}
+
+\cvitemwithcomment{Programming}{Python, C/C++, Matlab, Mathematica...}{}
+\cvitemwithcomment{}{Familiar with Unix systems and multiprocessing}{}
+\cvitemwithcomment{}{Solid knowledge of machine learning algorithms (sklearn, keras, pytorch...)}{}
+
+\vspace{0.3cm}
+
+\cvitemwithcomment{Driving}{Current full European driving licence}{}
+
+\vspace{0.5cm}
+
+%\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textsc{Interests}}
+
+\vspace{0.3cm}
+
+\cvitem{Music}{Clarinet :}
+
+\cvitem{}{$\ast$ ``Diplôme d'Etudes Musicales'' of the Toulon Conservatoire obtained in 2014}
+
+\cvitem{}{$\ast$ International Competition ``l'Anche d'Or'' : first prize of the solo category obtained in 2012}
+
+\cvitem{}{$\ast$ Solo clarinet and orchestra manager at the ``Philharmonie du COGE''}
+
+\cvitem{}{Musicology (graduate courses attended at ENS)}
+
+\cvitem{}{4 years of piano, 6 years of trumpet}
+
+
+\vspace{0.3cm}
+
+\cvitem{Sport}{Tennis, squash, running, swimming, surfing, snowboarding...}
+
+\vspace{0.3cm}
+
+\cvitemwithcomment{Other}{Economics, neuroscience, philosophy, musicology}{Courses followed at ENS}
+
+\cvitem{}{Cinema, painting, pottery, theatre...}
+\end{document}
